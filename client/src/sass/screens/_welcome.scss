@@ -6,7 +6,7 @@
     rgba(255, 255, 255, 0.5), 
     rgba(255, 255, 255, 0.5)),
     url("./../assets/images/welcome_background.jpg");
-  background-position: center;
+  background-position: center right;
   background-size: cover;
 
   display: flex;
@@ -20,17 +20,55 @@
     flex-direction: column;
     align-items: flex-end;
     margin-top: 5rem;
-    margin-right: 20rem;
+    margin-right: 10vw;
     text-align: center;
   }
 }
 
 .btn-div {
   &__welcome {
-    margin-top: 10rem;
+    margin-top: 7vh;
     display: grid;
     grid-template-columns: 30rem 30rem;
     width: fit-content;
-    margin-right: 25rem;
+    margin-right: 12.5vw;
+  }
+}
+
+@media  (max-width: 800px) {
+  .welcome-screen {
+    align-items: center;
+  }
+
+  .heading-div {
+    &__welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  .btn-div {
+    &__welcome {
+      margin: 7vh auto;
+      display: grid;
+      width: fit-content;
+      text-align: center;
+      grid-template-columns: 27rem 27rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-div {
+
+    &__welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

@@ -83,3 +83,71 @@ body {
   }
 }
 
+@media  (max-width: 800px) {
+  .heading-primary {
+    &--main {
+      font-size: 9rem;
+      letter-spacing: 2.5rem;
+      line-height: 8rem;
+    }
+  }
+
+  &--sub {
+    font-size: 2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.8rem;
+    
+  }
+}
+
+@media  (max-width: 600px) {
+  .heading-primary {
+    &--main {
+      font-size: 7rem;
+      letter-spacing: 2rem;
+      line-height: 6rem;
+    }
+  }
+
+  &--sub {
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.6rem;
+    
+  }
+}
+
+@media  (max-width: 450px) {
+  .heading-primary {
+    &--main {
+      font-size: 5.7rem;
+      letter-spacing: 1.5rem;
+      line-height: 5.5rem;
+    }
+  }
+
+  &--sub {
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.5rem;
+    
+  }
+}
+
+@media  (max-width: 350px) {
+  .heading-primary {
+    &--main {
+      font-size: 4.7rem;
+      letter-spacing: 1rem;
+      line-height: 5.5rem;
+    }
+  }
+
+  &--sub {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.3rem;
+    
+  }
+}
+

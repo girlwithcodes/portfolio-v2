@@ -15,7 +15,7 @@
   &--main{
     width: 25rem;
     background-color: white;
-    margin: 2rem 0;
+    margin: 1.5vw 0;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.3rem;
     
@@ -74,4 +74,34 @@
       border: 0.5rem solid white;
     }
   }
+}
+
+@media  (max-width: 800px) {
+  .btn {
+    &:link, 
+    &:visited {
+      font-size: 1.7rem;
+    }
+  
+    &--main{
+      width: 22rem;
+      letter-spacing: 0.3rem;
+    }
+  }
+
+}
+
+@media  (max-width: 800px) {
+  .btn {
+    &:link, 
+    &:visited {
+      font-size: 1.5rem;
+    }
+  
+    &--main{
+      width: 20rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+
 }
