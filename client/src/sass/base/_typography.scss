@@ -43,11 +43,31 @@ body {
 
 .header {
   &__logo-text {
-    color: white;
-    font-size: 1.8rem;
+    // color: white;
+    font-size: 2.4rem;
     // font-family: 'Raleway', sans-serif;
-    font-family: 'Maitree', serif;
-    font-weight: 800;
+    // font-family: 'Maitree', serif;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 900;
+
+    &--char1 {
+      color: $color-pink;
+    }
+    &--char2 {
+      color: $color-purple;
+    }
+    &--char3 {
+      background: -webkit-linear-gradient(to bottom, $color-pink, $color-purple, $color-blue, $color-green);
+      background: linear-gradient(to bottom, $color-pink, $color-purple, $color-blue, $color-green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--char4 {
+      color: $color-blue;
+    }
+    &--char5 {
+      color: $color-green;
+    }
 
   }
 }
@@ -69,7 +89,8 @@ body {
     // font-family: 'Alegreya Sans SC', sans-serif;
     // font-family: 'Niramit', sans-serif;
     // font-family: 'Prompt', sans-serif;
-    font-family: 'Maitree', serif;
+    // font-family: 'Maitree', serif;
+    font-family: 'Architects Daughter', cursive;
   
   }
 
@@ -80,6 +101,40 @@ body {
     letter-spacing: 0.9rem;
     font-family: 'Blinker', sans-serif;
     font-weight: 400;
+  }
+}
+
+.heading-secondary {
+  // font-family: 'Maitree', serif;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 5rem;
+
+  &--about-me {
+    color: $color-pink;
+    
+  }
+
+  &--projects {
+    color: $color-purple;
+  }
+
+  &--skills {
+    color: $color-blue;
+  }
+
+  &--contact {
+    color: $color-green;
+  }
+}
+
+.section-content-text {
+  text-indent: 3rem;
+  font-family: 'Blinker', sans-serif;
+  font-weight: 500;
+  color: rgb(113, 113, 113);
+
+  &--about-me {
+    font-size: clamp(1.8rem, 0.8vw, 10rem);
   }
 }
 

@@ -37,7 +37,8 @@
     &:hover{
       background-color: $color-pink;
       color: white;
-      border: 0.5rem solid white;
+      font-weight: 700;
+
     }
   }
 
@@ -48,7 +49,7 @@
     &:hover{
       background-color: $color-purple;
       color: white;
-      border: 0.5rem solid white;
+      font-weight: 700;
       
     }
   }
@@ -60,7 +61,7 @@
     &:hover{
       background-color: $color-blue;
       color: white;
-      border: 0.5rem solid white;
+      font-weight: 700;
     }
   }
 
@@ -71,7 +72,7 @@
     &:hover{
       background-color: $color-green;
       color: white;
-      border: 0.5rem solid white;
+      font-weight: 700;
     }
   }
 }

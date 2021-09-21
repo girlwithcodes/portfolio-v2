@@ -1,9 +1,15 @@
 .header {
-  background-color: black;
+  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  background-position: top;
+  background-size: cover;
   color: white;
   height: 5vh;
+  display: flex;
+  align-items: center;
 
   &__logo-div {
-    background-color: black;
+  margin: 0 3rem;
   }
+
+
 }

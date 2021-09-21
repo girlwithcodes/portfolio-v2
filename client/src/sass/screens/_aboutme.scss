@@ -1,0 +1,18 @@
+.section-image--prof-pic {
+  margin: 0 6rem;
+}
+
+#profile-pic  {
+  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  background-position: top;
+  background-size: cover;
+  width: clamp(40rem, 35vw, 50rem);
+  border: 1rem solid rgba(172, 165, 165, 0);
+}
+
+.section-content-text-div {
+  height: fit-content;
+  &--about-me {
+    margin: 0 3rem 0 0;
+  }
+}

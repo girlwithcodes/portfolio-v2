@@ -12,7 +12,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -23,10 +24,22 @@ body {
   line-height: 1.7; }
 
 .header__logo-text {
-  color: white;
-  font-size: 1.8rem;
-  font-family: 'Maitree', serif;
-  font-weight: 800; }
+  font-size: 2.4rem;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 900; }
+  .header__logo-text--char1 {
+    color: #ff7ad9; }
+  .header__logo-text--char2 {
+    color: #c684ee; }
+  .header__logo-text--char3 {
+    background: -webkit-linear-gradient(to bottom, #ff7ad9, #c684ee, #81fff7, #96ff7c);
+    background: linear-gradient(to bottom, #ff7ad9, #c684ee, #81fff7, #96ff7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .header__logo-text--char4 {
+    color: #81fff7; }
+  .header__logo-text--char5 {
+    color: #96ff7c; }
 
 .heading-primary {
   width: fit-content;
@@ -40,7 +53,7 @@ body {
     letter-spacing: 3rem;
     line-height: 9rem;
     margin: 3rem 0;
-    font-family: 'Maitree', serif; }
+    font-family: 'Architects Daughter', cursive; }
   .heading-primary--sub {
     display: block;
     font-size: 2.4rem;
@@ -48,6 +61,26 @@ body {
     letter-spacing: 0.9rem;
     font-family: 'Blinker', sans-serif;
     font-weight: 400; }
+
+.heading-secondary {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 5rem; }
+  .heading-secondary--about-me {
+    color: #ff7ad9; }
+  .heading-secondary--projects {
+    color: #c684ee; }
+  .heading-secondary--skills {
+    color: #81fff7; }
+  .heading-secondary--contact {
+    color: #96ff7c; }
+
+.section-content-text {
+  text-indent: 3rem;
+  font-family: 'Blinker', sans-serif;
+  font-weight: 500;
+  color: #717171; }
+  .section-content-text--about-me {
+    font-size: clamp(1.8rem, 0.8vw, 10rem); }
 
 @media (max-width: 800px) {
   .heading-primary--main {
@@ -119,7 +152,7 @@ body {
   .btn--about-me:hover {
     background-color: #ff7ad9;
     color: white;
-    border: 0.5rem solid white; }
+    font-weight: 700; }
 
 .btn--projects {
   color: #c684ee;
@@ -127,7 +160,7 @@ body {
   .btn--projects:hover {
     background-color: #c684ee;
     color: white;
-    border: 0.5rem solid white; }
+    font-weight: 700; }
 
 .btn--skills {
   color: #81fff7;
@@ -135,7 +168,7 @@ body {
   .btn--skills:hover {
     background-color: #81fff7;
     color: white;
-    border: 0.5rem solid white; }
+    font-weight: 700; }
 
 .btn--contact {
   color: #96ff7c;
@@ -143,7 +176,7 @@ body {
   .btn--contact:hover {
     background-color: #96ff7c;
     color: white;
-    border: 0.5rem solid white; }
+    font-weight: 700; }
 
 @media (max-width: 800px) {
   .btn:link, .btn:visited {
@@ -160,11 +193,63 @@ body {
     letter-spacing: 0.2rem; } }
 
 .header {
-  background-color: black;
+  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  background-position: top;
+  background-size: cover;
   color: white;
-  height: 5vh; }
+  height: 5vh;
+  display: flex;
+  align-items: center; }
   .header__logo-div {
-    background-color: black; }
+    margin: 0 3rem; }
+
+.section {
+  height: fit-content;
+  min-height: 100vh; }
+
+.heading-div {
+  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  background-position: top;
+  background-size: cover;
+  padding: 1rem;
+  text-align: center; }
+
+.section-content {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  min-height: 90vh;
+  content: "";
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.color-wedge {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 50% 50%, 0 90%); }
+  .color-wedge--about-me {
+    background-color: #ff7ad9; }
+
+.section-image--prof-pic {
+  margin: 0 6rem; }
+
+#profile-pic {
+  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  background-position: top;
+  background-size: cover;
+  width: clamp(40rem, 35vw, 50rem);
+  border: 1rem solid rgba(172, 165, 165, 0); }
+
+.section-content-text-div {
+  height: fit-content; }
+  .section-content-text-div--about-me {
+    margin: 0 3rem 0 0; }
 
 .welcome-screen {
   min-height: 100vh;
