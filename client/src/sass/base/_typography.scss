@@ -30,11 +30,9 @@
 // font-family: 'Share Tech', sans-serif;
 // font-family: 'Special Elite', cursive;
 // font-family: 'Spinnaker', sans-serif;
-// font-family: 'Trirong', serif;
-// font-family: 'Turret Road', cursive;
+
 
 body {
-  // font-family: "Lato", sans-serif;
   font-family: 'Raleway', sans-serif;
 
   font-weight: 300;
@@ -44,7 +42,8 @@ body {
 .header {
   &__logo-text {
     // color: white;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    transform: scale(1, 1.3);
     // font-family: 'Raleway', sans-serif;
     // font-family: 'Maitree', serif;
     font-family: 'Architects Daughter', cursive;
@@ -73,12 +72,10 @@ body {
 }
 
 .heading-primary {
-  width: fit-content;
 
-  background: -webkit-linear-gradient(to right, $color-pink, $color-purple, $color-blue, $color-green);
-  background: linear-gradient(to right, $color-pink, $color-purple, $color-blue, $color-green);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &--main {
     display: block;
@@ -86,11 +83,13 @@ body {
     letter-spacing: 3rem;
     line-height: 9rem;
     margin: 3rem 0;
-    // font-family: 'Alegreya Sans SC', sans-serif;
-    // font-family: 'Niramit', sans-serif;
-    // font-family: 'Prompt', sans-serif;
-    // font-family: 'Maitree', serif;
+    width: fit-content;
     font-family: 'Architects Daughter', cursive;
+    background: -webkit-linear-gradient(to right, $color-pink, $color-purple, $color-blue, $color-green);
+    background: linear-gradient(to right, $color-pink, $color-purple, $color-blue, $color-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
   
   }
 
@@ -101,7 +100,15 @@ body {
     letter-spacing: 0.9rem;
     font-family: 'Blinker', sans-serif;
     font-weight: 400;
+    width: fit-content;
+
+    background: -webkit-linear-gradient(to right, $color-pink, $color-purple, $color-blue, $color-green);
+    background: linear-gradient(to right, $color-pink, $color-purple, $color-blue, $color-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
+
 }
 
 .heading-secondary {
@@ -127,14 +134,35 @@ body {
   }
 }
 
+.heading-section-content{
+  font-family: 'Architects Daughter', cursive;
+  
+
+  width: fit-content;
+  
+  &--about-me {
+    color: $color-pink;
+    font-size: clamp(3.5rem, 2.2vw, 4rem);
+  }
+
+  &--project-card {
+    font-size: clamp(4rem, 2.5vw, 5rem);
+    color: $color-purple;
+
+  }
+}
+
 .section-content-text {
   text-indent: 3rem;
   font-family: 'Blinker', sans-serif;
+  // font-family: 'Spinnaker', sans-serif;
+
   font-weight: 500;
-  color: rgb(113, 113, 113);
+  color: rgb(80, 80, 80);
+  line-height: 3.2rem;
 
   &--about-me {
-    font-size: clamp(1.8rem, 0.8vw, 10rem);
+    font-size: clamp(2.25rem, 0.83vw, 10rem);
   }
 }
 

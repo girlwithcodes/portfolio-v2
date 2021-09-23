@@ -5,7 +5,7 @@ function Welcome() {
       <div className="heading-div__welcome">
         <h1 className="heading-primary">
           <div className="heading-primary--main">Welcome</div>
-          <div className="heading-primary--sub">Heather Mantooth | Software Engineer</div>
+          <div className="heading-primary--sub animation__shrink-in">Heather Mantooth | Software Engineer</div>
         </h1>
       </div>
       <div className="btn-div__welcome">

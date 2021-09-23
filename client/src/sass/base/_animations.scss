@@ -1,8 +1,47 @@
-@keyframes fadeIn {
+@keyframes moveInLeft {
   0% {
     transform: translateX(-10rem);
   }
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-10rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes shrinkInSub {
+  0%{
+    transform:(translateX(10%));
+    // width: 200%;
+    letter-spacing: 1.2em;
+  }
+
+  100% {
+    transform:(translateX(0));
+    // width: initial;
+    letter-spacing: 0.9rem;
+
+  }
+}
+
+@keyframes shrinkInMain {
+  0%{
+    transform:(translateX(10%));
+    // width: 200%;
+    letter-spacing: 4rem;
+  }
+
+  100% {
+    transform:(translateX(0));
+    // width: initial;
+    letter-spacing: 3rem;
+
   }
 }

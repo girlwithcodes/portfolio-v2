@@ -28,7 +28,7 @@
 }
 
 .color-wedge {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   z-index: -1;
   content: "";
@@ -40,5 +40,67 @@
 
   &--about-me {
     background-color: $color-pink;
+  }
+
+  &--projects {
+    background-color: $color-purple;
+  }
+
+  &--skills {
+    background-color: $color-blue;
+  }
+
+  &--contact {
+    background-color: $color-green;
+  }
+}
+
+.section-content-text-div {
+  width: 95vw;
+  padding: 0 2rem;
+  text-align: center;
+  
+}
+
+.section-content-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-heading-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1.5rem 0;
+  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  background-position: top;
+  background-size: cover;
+  width: clamp(20rem, 65vw, 60rem);
+
+}
+
+.dropdown-text-div {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1250px) {
+  .section-content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0;
+  }
+
+  
+
+  // .color-wedge {
+  //   clip-path: polygon(0 0, 100% 50%, 0 90%);
+  // }
+}
+
+@media (max-width: 500px) {
+  .color-wedge {
+    clip-path: polygon(0 0, 100% 50%, 0 90%);
+    height: 100vh;
   }
 }

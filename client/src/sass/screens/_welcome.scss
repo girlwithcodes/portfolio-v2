@@ -24,6 +24,20 @@
     text-align: center;
   }
 }
+.heading-primary {
+
+  &--sub {
+      animation: shrinkInSub 1.2s;
+      overflow-x: hidden;
+      white-space:nowrap;
+  }
+
+  &--main {
+    animation: shrinkInMain 1.2s;
+}
+}
+
+
 
 .btn-div {
   &__welcome {
@@ -63,6 +77,7 @@
 }
 
 @media (max-width: 500px) {
+
   .btn-div {
 
     &__welcome {
@@ -71,4 +86,13 @@
       align-items: center;
     }
   }
+
+  .heading-primary {
+
+    &--sub {
+      animation: none;
+      white-space: unset;
+    }
+
+}
 }

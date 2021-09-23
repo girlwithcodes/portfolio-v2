@@ -1,8 +1,30 @@
-@keyframes fadeIn {
+@keyframes moveInLeft {
   0% {
     transform: translateX(-10rem); }
   100% {
     transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-10rem); }
+  100% {
+    transform: translate(0); } }
+
+@keyframes shrinkInSub {
+  0% {
+    transform: translateX(10%);
+    letter-spacing: 1.2em; }
+  100% {
+    transform: translateX(0);
+    letter-spacing: 0.9rem; } }
+
+@keyframes shrinkInMain {
+  0% {
+    transform: translateX(10%);
+    letter-spacing: 4rem; }
+  100% {
+    transform: translateX(0);
+    letter-spacing: 3rem; } }
 
 *,
 *::after,
@@ -24,7 +46,8 @@ body {
   line-height: 1.7; }
 
 .header__logo-text {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  transform: scale(1, 1.3);
   font-family: 'Architects Daughter', cursive;
   font-weight: 900; }
   .header__logo-text--char1 {
@@ -42,25 +65,33 @@ body {
     color: #96ff7c; }
 
 .heading-primary {
-  width: fit-content;
-  background: -webkit-linear-gradient(to right, #ff7ad9, #c684ee, #81fff7, #96ff7c);
-  background: linear-gradient(to right, #ff7ad9, #c684ee, #81fff7, #96ff7c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .heading-primary--main {
     display: block;
     font-size: 11rem;
     letter-spacing: 3rem;
     line-height: 9rem;
     margin: 3rem 0;
-    font-family: 'Architects Daughter', cursive; }
+    width: fit-content;
+    font-family: 'Architects Daughter', cursive;
+    background: -webkit-linear-gradient(to right, #ff7ad9, #c684ee, #81fff7, #96ff7c);
+    background: linear-gradient(to right, #ff7ad9, #c684ee, #81fff7, #96ff7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .heading-primary--sub {
     display: block;
     font-size: 2.4rem;
     line-height: 3rem;
     letter-spacing: 0.9rem;
     font-family: 'Blinker', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    width: fit-content;
+    background: -webkit-linear-gradient(to right, #ff7ad9, #c684ee, #81fff7, #96ff7c);
+    background: linear-gradient(to right, #ff7ad9, #c684ee, #81fff7, #96ff7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .heading-secondary {
   font-family: 'Architects Daughter', cursive;
@@ -74,13 +105,24 @@ body {
   .heading-secondary--contact {
     color: #96ff7c; }
 
+.heading-section-content {
+  font-family: 'Architects Daughter', cursive;
+  width: fit-content; }
+  .heading-section-content--about-me {
+    color: #ff7ad9;
+    font-size: clamp(3.5rem, 2.2vw, 4rem); }
+  .heading-section-content--project-card {
+    font-size: clamp(4rem, 2.5vw, 5rem);
+    color: #c684ee; }
+
 .section-content-text {
   text-indent: 3rem;
   font-family: 'Blinker', sans-serif;
   font-weight: 500;
-  color: #717171; }
+  color: #505050;
+  line-height: 3.2rem; }
   .section-content-text--about-me {
-    font-size: clamp(1.8rem, 0.8vw, 10rem); }
+    font-size: clamp(2.25rem, 0.83vw, 10rem); }
 
 @media (max-width: 800px) {
   .heading-primary--main {
@@ -192,12 +234,29 @@ body {
     width: 20rem;
     letter-spacing: 0.2rem; } }
 
+.chevron-background {
+  width: fit-content; }
+
+.project-card {
+  width: 100vw; }
+  .project-card--title {
+    width: clamp(20rem, 65vw, 80rem);
+    background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+    background-position: top;
+    background-size: cover; }
+  .project-card--project-image {
+    width: clamp(40rem, 40vw, 75rem);
+    background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+    background-position: top;
+    background-size: cover;
+    border: 1.2rem solid rgba(255, 255, 255, 0); }
+
 .header {
   background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
   background-position: top;
   background-size: cover;
   color: white;
-  height: 5vh;
+  height: 10vh;
   display: flex;
   align-items: center; }
   .header__logo-div {
@@ -225,7 +284,7 @@ body {
   align-items: center; }
 
 .color-wedge {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   z-index: -1;
   content: "";
@@ -235,6 +294,46 @@ body {
   clip-path: polygon(0 0, 50% 50%, 0 90%); }
   .color-wedge--about-me {
     background-color: #ff7ad9; }
+  .color-wedge--projects {
+    background-color: #c684ee; }
+  .color-wedge--skills {
+    background-color: #81fff7; }
+  .color-wedge--contact {
+    background-color: #96ff7c; }
+
+.section-content-text-div {
+  width: 95vw;
+  padding: 0 2rem;
+  text-align: center; }
+
+.section-content-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.dropdown-heading-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1.5rem 0;
+  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  background-position: top;
+  background-size: cover;
+  width: clamp(20rem, 65vw, 60rem); }
+
+.dropdown-text-div {
+  margin-bottom: 2rem; }
+
+@media (max-width: 1250px) {
+  .section-content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0; } }
+
+@media (max-width: 500px) {
+  .color-wedge {
+    clip-path: polygon(0 0, 100% 50%, 0 90%);
+    height: 100vh; } }
 
 .section-image--prof-pic {
   margin: 0 6rem; }
@@ -243,13 +342,23 @@ body {
   background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
   background-position: top;
   background-size: cover;
-  width: clamp(40rem, 35vw, 50rem);
+  width: clamp(45rem, 35vw, 50rem);
   border: 1rem solid rgba(172, 165, 165, 0); }
 
 .section-content-text-div {
   height: fit-content; }
   .section-content-text-div--about-me {
     margin: 0 3rem 0 0; }
+
+@media (max-width: 1000px) {
+  .section-image--prof-pic {
+    margin: 5rem 0; } }
+
+@media (max-width: 500px) {
+  #profile-pic {
+    width: clamp(24rem, 80vw, 35rem); }
+  .section-image--prof-pic {
+    margin: 7rem 0 3rem 0; } }
 
 .welcome-screen {
   min-height: 100vh;
@@ -268,6 +377,14 @@ body {
   margin-top: 5rem;
   margin-right: 10vw;
   text-align: center; }
+
+.heading-primary--sub {
+  animation: shrinkInSub 1.2s;
+  overflow-x: hidden;
+  white-space: nowrap; }
+
+.heading-primary--main {
+  animation: shrinkInMain 1.2s; }
 
 .btn-div__welcome {
   margin-top: 7vh;
@@ -297,4 +414,7 @@ body {
   .btn-div__welcome {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .heading-primary--sub {
+    animation: none;
+    white-space: unset; } }
