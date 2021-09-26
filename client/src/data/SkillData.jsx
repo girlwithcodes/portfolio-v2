@@ -1,7 +1,7 @@
 import { FaReact, FaJs, FaNodeJs, FaGithub, FaHtml5, FaCss3, FaSass, FaJava, FaPython} from 'react-icons/fa';
 import { DiRuby, DiMongodb } from "react-icons/di";
 import { SiRails, SiMysql, SiPostgresql, SiPhp} from "react-icons/si";
-import { IoChatbubblesSharp } from "react-icons/io5";
+// import { IoChatbubblesSharp } from "react-icons/io5";
 
   const badgeColor = "#81fff7";
   const badgeSize = "4.5rem";

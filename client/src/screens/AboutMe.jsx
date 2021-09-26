@@ -1,4 +1,4 @@
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+// import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import profpic from '../assets/images/profpic.jpg';
 
 function AboutMe() {

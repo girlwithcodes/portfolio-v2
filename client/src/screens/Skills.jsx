@@ -12,8 +12,8 @@ function Skills() {
         <div className="color-wedge color-wedge--skills"></div>
 
         <div className="skills-description-div">
-          <h4  className="skills-description-header"></h4>
-          <p className="skill-description"></p>
+          <h4  className="skills-description-header">Skill Name</h4>
+          <p className="skill-description">Skill Description</p>
         </div>
 
         <h3 className="skills-title heading-section-content--skills"> Technical </h3>
