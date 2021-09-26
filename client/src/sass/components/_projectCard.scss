@@ -26,6 +26,13 @@
     background-size: cover;
     border: 1.2rem solid rgba(255, 255, 255, 0);
     margin: 1rem;
+
+    &:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+      transition: 0.2s;
+    }
+    
   }
 
   &--link-div {
@@ -35,10 +42,23 @@
 
   &--project-link {
     margin: 1rem 2rem;
+    border-radius: 50%;
+    &:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+      transition: 0.2s;
+    }
   }
 
   &--github-link {
     margin: 1rem 2rem;
+    border-radius: 50%;
+
+    &:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+      transition: 0.2s;
+    }
   }
 
 }

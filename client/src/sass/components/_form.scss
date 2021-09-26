@@ -32,6 +32,7 @@
   justify-content: center;
   margin: 2rem 0;
   width: clamp(30rem, 40vw, 70rem);
+  font-weight: 400;
 }
 
 .message-input {
@@ -45,9 +46,6 @@
 
   &--text-area {
     height: 15rem;
-    // box-shadow: $color-green 0px 0px 0px 1px;
-    // box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-    
   }
 
   &:focus {

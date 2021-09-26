@@ -158,7 +158,8 @@ body {
   font-family: 'Blinker', sans-serif;
   font-size: clamp(2rem, 1vw, 4rem);
   color: #505050;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
 
 .form-text {
   font-size: 2rem;
@@ -309,7 +310,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 2rem 0;
-  width: clamp(30rem, 40vw, 70rem); }
+  width: clamp(30rem, 40vw, 70rem);
+  font-weight: 400; }
 
 .message-input {
   border-bottom: 0.2rem solid #96ff7c;
@@ -344,13 +346,27 @@ body {
     background-size: cover;
     border: 1.2rem solid rgba(255, 255, 255, 0);
     margin: 1rem; }
+    .project-card--project-image:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      transition: 0.2s; }
   .project-card--link-div {
     display: flex;
     flex-direction: row; }
   .project-card--project-link {
-    margin: 1rem 2rem; }
+    margin: 1rem 2rem;
+    border-radius: 50%; }
+    .project-card--project-link:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      transition: 0.2s; }
   .project-card--github-link {
-    margin: 1rem 2rem; }
+    margin: 1rem 2rem;
+    border-radius: 50%; }
+    .project-card--github-link:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      transition: 0.2s; }
 
 .project-card-content--outer-div {
   background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
@@ -511,7 +527,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 2rem 0; }
 
 .skill-icon-inner-div {
   background-color: white;

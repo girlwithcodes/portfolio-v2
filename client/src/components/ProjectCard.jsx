@@ -10,9 +10,11 @@ function ProjectCard(props) {
 
       <div className="project-card-content--outer-div"> 
         <div className="project-card-content--inner-div"> 
-          <div className="project-card--image-div">
-            <img src={projectInfo.image} alt="project screenshot" className="project-card--project-image"/>
-          </div>
+          <a href={projectInfo.projectUrl} target="_blank">
+            <div className="project-card--image-div">
+              <img src={projectInfo.image} alt="project screenshot" className="project-card--project-image"/>
+            </div>
+          </a>
 
           <div className="project-card--text-div">
             <div className="project-card--description">{projectInfo.description}</div>
@@ -24,12 +26,12 @@ function ProjectCard(props) {
           </div>
 
           <div className="project-card--link-div">
-            <a href={projectInfo.gitHubUrl}>
+            <a href={projectInfo.gitHubUrl} target="_blank">
               <div className="project-card--github-link">
                 <FaGithub size="2.5rem" color="#c684ee" className="github-icon--project-card"/>
               </div>
             </a>
-            <a href={projectInfo.projectUrl}>
+            <a href={projectInfo.projectUrl} target="_blank">
               <div className="project-card--project-link">
                 <FaLink size="2.5rem" color="#c684ee" className="link-icon--project-card" />
               </div>
