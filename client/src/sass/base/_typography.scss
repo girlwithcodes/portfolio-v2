@@ -148,21 +148,56 @@ body {
   &--project-card {
     font-size: clamp(4rem, 2.5vw, 5rem);
     color: $color-purple;
+    text-align: center;
 
+  }
+
+  &--skills {
+    font-family: 'Architects Daughter', cursive;
+    color: $color-blue;
+    font-size: clamp(2rem, 1.5vw, 3rem);
   }
 }
 
 .section-content-text {
   text-indent: 3rem;
   font-family: 'Blinker', sans-serif;
-  // font-family: 'Spinnaker', sans-serif;
 
   font-weight: 500;
-  color: rgb(80, 80, 80);
+  color: $color-grey;
   line-height: 3.2rem;
 
   &--about-me {
     font-size: clamp(2.25rem, 0.83vw, 10rem);
+  }
+}
+
+.project-card {
+  &--text-div {
+    font-size: 2rem;
+    font-family: 'Blinker', sans-serif;
+
+    font-weight: 500;
+    color: $color-grey;
+    line-height: 3.2rem;
+
+  }
+}
+
+.form-text {
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-grey;
+}
+
+.message-input {
+  &--text {
+    font-size: 2rem;
+    
+    font-family: 'Maven Pro', sans-serif;
+
+    color: $color-grey;
+    font-weight: 300;
   }
 }
 

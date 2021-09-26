@@ -15,7 +15,8 @@ function Projects() {
         <h2 className="heading-secondary heading-secondary--projects">Projects</h2>
       </div>
 
-      <div className="section-content section-content-projects">
+      <div className="section-content section-content--projects">
+        
         <div className="color-wedge color-wedge--projects"></div>
         <Carousel carouselData={carouselData}/>
       {ProjectData.map((project, index)=>(
