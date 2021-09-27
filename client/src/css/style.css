@@ -57,24 +57,32 @@ body {
   font-weight: 300;
   line-height: 1.7; }
 
-.header__logo-text {
+.header__logo-text, .footer__logo-text {
   font-size: 2.5rem;
   transform: scale(1, 1.3);
   font-family: 'Architects Daughter', cursive;
   font-weight: 900; }
-  .header__logo-text--char1 {
+  .header__logo-text--char1, .footer__logo-text--char1 {
     color: #ff7ad9; }
-  .header__logo-text--char2 {
+  .header__logo-text--char2, .footer__logo-text--char2 {
     color: #c684ee; }
-  .header__logo-text--char3 {
+  .header__logo-text--char3, .footer__logo-text--char3 {
     background: -webkit-linear-gradient(to bottom, #ff7ad9, #c684ee, #81fff7, #96ff7c);
     background: linear-gradient(to bottom, #ff7ad9, #c684ee, #81fff7, #96ff7c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .header__logo-text--char4 {
+  .header__logo-text--char4, .footer__logo-text--char4 {
     color: #81fff7; }
-  .header__logo-text--char5 {
+  .header__logo-text--char5, .footer__logo-text--char5 {
     color: #96ff7c; }
+
+.header--icon-text, .footer--icon-text {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.header--link-text:link, .header--link-text:visited, .footer--link-text:link, .footer--link-text:visited {
+  text-decoration: none;
+  color: white; }
 
 .heading-primary {
   display: flex;
@@ -122,9 +130,9 @@ body {
   width: fit-content; }
   .heading-section-content--about-me {
     color: #ff7ad9;
-    font-size: clamp(3.5rem, 2.2vw, 4rem); }
+    font-size: clamp(2rem, 1.5vw, 3rem); }
   .heading-section-content--project-card {
-    font-size: clamp(4rem, 2.5vw, 5rem);
+    font-size: clamp(3.5rem, 2.2vw, 4.2rem);
     color: #c684ee;
     text-align: center; }
   .heading-section-content--skills {
@@ -171,6 +179,11 @@ body {
   font-family: 'Maven Pro', sans-serif;
   color: #505050;
   font-weight: 300; }
+
+.copyright-statement {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 500; }
 
 @media (max-width: 800px) {
   .heading-primary--main {
@@ -382,10 +395,31 @@ body {
   background-color: white;
   padding: 2rem; }
 
+.footer {
+  background-color: black;
+  color: white;
+  height: clamp(15rem, 12vh, 20rem);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 5rem 0 0 0; }
+  .footer__logo-div {
+    margin: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer__links-div {
+    margin: 3rem;
+    display: flex;
+    flex-direction: row; }
+  .footer--icon-text {
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
 .header {
-  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
-  background-position: top;
-  background-size: cover;
+  background-color: black;
   color: white;
   height: 10vh;
   display: flex;
@@ -398,9 +432,7 @@ body {
   min-height: 100vh; }
 
 .heading-div {
-  background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
-  background-position: top;
-  background-size: cover;
+  background-color: black;
   padding: 1rem;
   text-align: center; }
 
@@ -531,7 +563,7 @@ body {
   margin: 2rem 0; }
 
 .skill-icon-inner-div {
-  background-color: white;
+  background-color: black;
   width: fit-content;
   display: flex;
   flex: row;

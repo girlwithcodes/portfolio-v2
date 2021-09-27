@@ -5,6 +5,7 @@ import AboutMe from './screens/AboutMe';
 import Projects from './screens/Projects';
 import Skills from './screens/Skills';
 import Contact from './screens/Contact';
+import Footer from './layout/Footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Projects/>
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }

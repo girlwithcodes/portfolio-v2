@@ -1,0 +1,36 @@
+
+.footer {
+  // background-image: url("https://www.backgroundsy.com/file/silver-background.jpg");
+  // background-position: top;
+  // background-size: cover;
+  background-color: black;
+  color: white;
+  height: clamp(15rem, 12vh, 20rem);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 5rem 0 0 0;
+
+  &__logo-div {
+  margin: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  &__links-div {
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    // background-color: red;
+  }
+
+  &--icon-text {
+    margin: 1rem 3rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="header header--sticky">
+    <header className="header">
       <div className="header__logo-div">
         <h3 className="header__logo-text">
           <span className="header__logo-text--char1">H</span>
